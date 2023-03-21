@@ -19,6 +19,7 @@ public class Revolver
     
     public void unload( int flag)
     {
+        string bullet;
         if (flag == 0)
         {
             int temp = pointer;
@@ -27,7 +28,8 @@ public class Revolver
             {
                 if (clip[temp % 6] != 0)
                 {
-                    Console.Write($"{clip[temp % 6]} ");
+                    bullet = clip[temp % 6].ToString();
+                    Console.Write($"{bullet} ");
                 }
 
                 temp++;
@@ -38,7 +40,8 @@ public class Revolver
         }
         else if (flag == 1)
         {
-            Console.WriteLine($"{clip[pointer]}");
+            bullet = clip[pointer].ToString();
+            Console.WriteLine($"{bullet}");
             Console.WriteLine($"\n");
         }
         else

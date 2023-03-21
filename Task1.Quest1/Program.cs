@@ -17,4 +17,4 @@ Andrey.print();
 Console.WriteLine($"{Andrey.pointer}");
 Andrey.scroll();
 Console.WriteLine($"{Andrey.pointer}");
-Andrey.unload(25);
+Andrey.unload(1);
